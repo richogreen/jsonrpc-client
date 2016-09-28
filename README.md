@@ -1,1 +1,1 @@
-# laravel-jsonrpc-client
+# JSON RPC Client

@@ -1,0 +1,15 @@
+{
+  "name": "r-green/jsonrpc-client",
+  "description": "JSON RPC Client for PHP 5.3+",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Richard Green",
+      "email": "rg@ie.com.au"
+    }
+  ],
+  "require": {
+    "php": ">=5.3.4"
+  }
+}
