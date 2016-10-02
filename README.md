@@ -1,1 +1,1 @@
-# JSON RPC Client
+# Simple PHP JSON-RPC Client
