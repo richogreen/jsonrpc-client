@@ -1,6 +1,6 @@
 {
   "name": "r-green/jsonrpc-client",
-  "description": "JSON RPC Client for PHP 5.3+",
+  "description": "JSON RPC Client for PHP 5.4+",
   "type": "library",
   "license": "MIT",
   "authors": [
