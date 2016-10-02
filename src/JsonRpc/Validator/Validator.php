@@ -1,9 +1,8 @@
 <?php
 /**
- * Created by PhpStorm.
- * User: richardgreen
- * Date: 3/10/2016
- * Time: 9:48 AM
+ * Author: Richard Green
+ * Date: 28/09/2016
+ * Time: 4:04 PM
  */
 
 namespace JsonRpc\Validator;
