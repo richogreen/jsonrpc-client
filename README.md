@@ -12,7 +12,7 @@ composer require r-green/jsonrpc-client
 ### Usage
 
 ```
-use Rgreen\JsonRpcClient\JsonRpc\Client;
+use JsonRpc\Client;
 
 $params = [];
 
