@@ -1,6 +1,8 @@
 # Simple PHP JSON-RPC Client
 
-Basic Client for JSON-RPC 2.0
+Straight forward JSON RPC 2.0 Client for PHP without the bloat.
+
+See JSON-RPC spec for more info:
 http://www.jsonrpc.org/specification
 
 ### Composer
@@ -14,11 +16,12 @@ composer require r-green/jsonrpc-client
 ```
 use JsonRpc\Client;
 
-$params = [];
+$params = [
+    ...
+];
 
 $client = new Client('http://www.example.com');
-// ID, Method, Params
-$client->request(123456, 'myMethod', $params); 
+$client->request(123456, 'myMethod', $params); // ID, Method, Params
 
 $result = $client->send();
 ```
