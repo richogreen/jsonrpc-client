@@ -12,7 +12,7 @@ use JsonRpc\Exception\InvalidJsonFormatException;
 
 class JsonFormatValidator extends Validator
 {
-    public static function validate($payload)
+    public function validate($payload)
     {
         if (!is_array($payload)) {
             throw new InvalidJsonFormatException('Invalid JSON payload');

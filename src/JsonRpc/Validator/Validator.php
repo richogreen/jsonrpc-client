@@ -9,5 +9,5 @@ namespace JsonRpc\Validator;
 
 abstract class Validator
 {
-    abstract protected static function validate($value);
+    abstract protected function validate($value);
 }

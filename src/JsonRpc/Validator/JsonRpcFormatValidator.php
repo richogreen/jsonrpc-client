@@ -12,7 +12,7 @@ use JsonRpc\Exception\JsonRpcFormatInvalidException;
 
 class JsonRpcFormatValidator extends Validator
 {
-    public static function validate($payload)
+    public function validate($payload)
     {
         if (!isset($payload['jsonrpc']) || !isset($payload['method']) || !is_string($payload['method']) || $payload['jsonrpc'] !== '2.0'
             || (isset($payload['params']) && !is_array($payload['params']))) {

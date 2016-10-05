@@ -12,7 +12,7 @@ use JsonRpc\Exception\JsonEncodingFailureException;
 
 class JsonEncodingValidator extends Validator
 {
-    public static function validate($jsonLastError)
+    public function validate($jsonLastError)
     {
         if ($jsonLastError !== JSON_ERROR_NONE) {
             switch ($jsonLastError) {
