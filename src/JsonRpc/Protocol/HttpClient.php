@@ -42,6 +42,11 @@ class HttpClient
     private $url;
 
     /**
+     * @var string
+     */
+    private $caFile;
+
+    /**
      * Socket constructor.
      * @param $url
      */
@@ -113,6 +118,18 @@ class HttpClient
             ]
         ];
 
+        if ($this->caFile) {
+            $optons['ssl']['cafile'] = $this->caFile;
+        }
+
         return stream_context_create($options);
+    }
+
+    /**
+     * @param $path
+     */
+    public function setCertificate($path)
+    {
+        $this->caFile = $path;
     }
 }
