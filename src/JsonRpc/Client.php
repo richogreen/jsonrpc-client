@@ -152,4 +152,12 @@ class Client
 
         return $result;
     }
+
+    /**
+     * @return HttpClient
+     */
+    public function getHttpClient()
+    {
+        return $this->httpClient;
+    }
 }
