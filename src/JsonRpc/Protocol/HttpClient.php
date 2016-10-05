@@ -119,7 +119,7 @@ class HttpClient
         ];
 
         if ($this->caFile) {
-            $optons['ssl']['cafile'] = $this->caFile;
+            $options['ssl']['cafile'] = $this->caFile;
         }
 
         return stream_context_create($options);
